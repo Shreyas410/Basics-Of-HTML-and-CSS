@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+#navbar{
+    position: relative;
+    display: flex;
+    
+    align-items:center;
+    justify-content:center; 
+    
+}  
+#logo{
+    margin: 2px;
+}
+ #logo img{
+     position:absolute;
+     left: 12px;
+     top: 3px;
+     width: 100px;
+     float: left;
+     border:2px solid green;
+     border-radius: 24px;
+ } 
+ #logo img:hover {
+     box-shadow:6px 5px 4px lightgreen;
+ }
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 18.2;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    }
+#navbar ul li a{
+    color: rgb(10, 250, 10);
+    display: flex;
+    padding: 9px;
+    background-color: rgb(10, 10, 10);
+  
+    border-radius: 15px;
+    text-decoration: none; 
+    cursor: pointer;
+}
+ #navbar ul li a:hover{
+    color:rgb(248, 245, 245);
+    background-color: rgb(7, 7, 7); 
+    border:  1px solid rgb(8, 156, 119);
+} 
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    background:url("https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg");
+    position: absolute;
+    width: 100%;
+    height:360px;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(14, 12, 1); 
+    font-size: 35px;
+    padding: 7px;
+}
+#home p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(30, 31, 30);
+  padding-bottom: 5px;
+
+}
+.btn1{
+    background-color: rgb(13, 88, 63);
+    color: whitesmoke;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn1:hover{
+    box-shadow: 2px 3px 4px gold;
+}
+.service-container{
+    background-color: rgb(228, 212, 192);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#services{
+    margin: 33px;
+    display: flex;
+   
+   
+    
+}
+#services .box{
+    padding: 12px;
+    margin: 6px;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: darkkhaki;
+
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+    
+}
+.center{
+    text-align: center;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(14, 12, 1); 
+    font-size: 35px;
+}
+
+.sponsers{
+    background-color: rgb(132, 219, 178);
+    font-family: 'Times New Roman', Times, serif;
+    height: 400px;
+}
+
+#clients{
+    margin: 33px;
+    display: flex;
+  
+   
+    
+}
+.bo img{
+    width: 200px;
+    padding: 35px;
+    margin: 9px;
+    border: 1px solid red;
+    border-radius: 20px;
+     background-color:lightgoldenrodyellow;
+}
+

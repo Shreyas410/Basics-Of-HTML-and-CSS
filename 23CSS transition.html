@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSITION</title>
+</head>
+<style>
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        background-color: azure;
+        transition-property: background-color ;
+        transition-duration: 3s;
+
+    }
+    #box:hover{
+        background-color: aqua;
+        border-radius: 12px;
+        height: 400px;
+        width: 400px;
+    }
+
+</style>
+<body>
+    <h1>This is CSS Transition</h1>
+    <div class="container">
+        <div id="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>         

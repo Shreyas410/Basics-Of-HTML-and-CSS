@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TEMPLATE AREAS</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer  ';
+        grid-gap: 2rem;
+        grid-template-columns:repeat( auto-fit,minmax(400px ,1fr));
+        /* grid-template-rows: repeat(auto-fit,minmax(200px,3fr)); */
+
+    }
+
+    .item {
+        background-color: skyblue;
+        border: 2px solid red;
+    }
+
+    #navbar {
+        grid-area: navbar;
+
+    }
+
+    #section {
+        grid-area: section;
+
+
+    }
+
+    #aside {
+        grid-area: aside;
+
+
+    }
+    footer {
+        grid-area: footer;
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem sequi doloremque alias saepe fuga
+            nesciunt, illum consectetur, modi ipsam voluptate, provident eveniet iusto magnam consequuntur impedit.
+            Aspernatur, at iusto! Molestias beatae maxime odit?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem culpa tempore nihil velit. A quibusdam
+            fugiat nisi reprehenderit provident? Sapiente rerum mollitia, excepturi dicta et in cumque deserunt, vitae
+            rem atque quod ab quia velit tempore aliquam numquam optio blanditiis ea laudantium veniam dolor. Laboriosam
+            sint vero rem eaque exercitationem necessitatibus et aut beatae similique aliquam, minus, voluptatum earum
+            reiciendis ea in iste. Ullam rerum voluptate optio obcaecati cumque libero sint cupiditate esse modi
+            commodi! Alias, expedita, perferendis excepturi obcaecati itaque illum rerum consectetur distinctio, rem
+            quae recusandae provident velit laborum consequatur minus vel aperiam delectus quam? Sed accusantium
+            blanditiis iusto. Perspiciatis illo possimus iste sapiente. Laborum sapiente eum optio, iste error, ipsum a
+            totam animi minima sunt at eligendi quisquam repellat non nulla et numquam ullam, sint harum quos. Culpa eos
+            veniam quae consequuntur nihil exercitationem hic, adipisci asperiores nam cum tempore odio delectus optio a
+            eius possimus tenetur cumque quod ullam. Ea, aut dolore iure iste ipsa rem esse hic quidem laborum iusto
+            cumque eos ipsam odit consectetur distinctio? Voluptates tenetur ipsum nulla eaque sequi quia totam? Sit
+            similique eligendi, quos fugit, numquam accusamus officiis libero voluptatibus vero ratione, temporibus
+            laudantium distinctio error voluptate magnam. Nesciunt, dolorum ipsum. Aut nostrum voluptates, numquam
+            provident assumenda neque nulla consequuntur hic iusto cumque facilis sit tenetur! Enim repellat est
+            accusantium magnam, odit beatae minus porro impedit quae, fugiat corrupti, excepturi voluptatum delectus? A
+            quam magni enim consequatur sapiente magnam repellendus consequuntur? Quaerat eius nostrum excepturi soluta
+            dolores id provident labore quam rerum? Cupiditate illum eaque, accusamus praesentium dignissimos quidem
+            sapiente nam impedit odio. Tenetur vel reiciendis deserunt minima animi qui dolorum libero inventore,
+            voluptas eius nam eaque cupiditate, maxime excepturi sint cumque nesciunt. Quidem, perferendis! Magni et
+            quaerat repellendus deserunt ullam perspiciatis ab eius, nihil commodi voluptates ipsa sit odio aut.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, maxime.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, mollitia? Eum, corrupti officiis commodi
+            amet impedit pariatur aut atque sit.
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea veritatis provident?
+        </footer>
+        <!-- <div class="item">ITEM-1</div>
+        <div class="item">ITEM-2</div>
+        <div class="item">ITEM-3</div>
+        <div class="item">ITEM-4</div>
+        <div class="item">ITEM-5</div>
+        <div class="item">ITEM-6</div>
+        <div class="item">ITEM-7</div>
+        <div class="item">ITEM-8</div>
+        <div class="item">ITEM-9</div>
+        <div class="item">ITEM-10</div>
+        <div class="item">ITEM-11</div>
+        <div class="item">ITEM-12</div>
+        <div class="item">ITEM-13</div>
+        <div class="item">ITEM-14</div> -->
+
+    </div>
+
+</body>
+
+</html>

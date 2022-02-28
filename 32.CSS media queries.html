@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries </title>
+</head>
+<style>
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: rosybrown;
+        }
+    }
+
+    @media (min-width:300px) and (max-width:500px) {
+        body {
+            background-color: rgb(61, 15, 15);
+        }
+
+        .container {
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside  aside  aside  aside '
+                'footer footer footer footer';
+        }
+    }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(37, 10, 99);
+            }
+
+          
+
+            /* #aside {
+            display: none;
+        } */
+
+        
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: rgb(85, 146, 35);
+            }
+        }
+
+        #navbar {
+            grid-area: navbar;
+            background-color: skyblue;
+            width: 0px;
+
+        }
+
+        #section {
+            grid-area: section;
+            background-color: skyblue;
+
+
+        }
+
+        #aside {
+            grid-area: aside;
+            background-color: skyblue;
+
+
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: skyblue;
+
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer  ';
+            grid-gap: 2rem;
+
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem sequi doloremque alias saepe fuga
+            nesciunt, illum consectetur, modi ipsam voluptate, provident eveniet iusto magnam consequuntur impedit.
+            accusantium magnam, odit beatae minus porro impedit quae, fugiat corrupti, excepturi voluptatum delectus? A
+            quam magni enim consequatur sapiente magnam repellendus consequuntur? Quaerat eius nostrum excepturi soluta
+            dolores id provident labore quam rerum? Cupiditate illum eaque, accusamus praesentium dignissimos quidem
+            sapiente nam impedit odio. Tenetur vel reiciendis deserunt minima animi qui dolorum libero inventore,
+            voluptas eius nam eaque cupiditate, maxime excepturi sint cumque nesciunt. Quidem, perferendis! Magni et
+            quaerat repellendus deserunt ullam perspiciatis ab eius, nihil commodi voluptates ipsa sit odio aut.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, maxime.
+
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea veritatis provident?
+        </footer>
+
+</body>
+
+</html>

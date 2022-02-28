@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body {
+            background-color: rgb(14, 13, 13);
+            color: white;
+           
+           
+        }
+       
+      
+        section {
+            width: 1000px;
+            font-style: oblique;
+            padding: 4px;
+            margin: 6px;
+             display: flex; 
+             flex-direction: column; 
+            align-items: center;
+            border: solid red;
+            height: 455px;
+            /* justify-content: center; */
+            background: url("https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_1280.jpg");
+           
+          
+        }
+     
+        .navigation {
+            display: flex;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 14px;
+            font-size: 45px;
+            align-content: center;
+        }
+
+        section::before {
+            content: "This is content";
+        }
+
+        p {
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h2>welcome to coding</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing e tenetur doloribus magni est voluptas
+            lit. Illo ipsa blanditiis, exercitationem doloremque voluptate possimus quae modi repudiandae molestias
+            nihil maxime voluptatem, dicta et animi aspernatur! Omnis quaerat cupiditate
+        </p>
+       
+    </section>
+</body>
+
+</html>

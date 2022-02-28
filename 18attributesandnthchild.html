@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes And nth child</title>
+    <style>
+   .container{
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: medium;
+       width: 344px;
+       margin: auto;
+   }
+   input{
+       display: block;
+   }
+  input[type=text]{
+      padding: 13px;
+      border: solid black;
+  }
+  li:nth-child(3){
+      color: chartreuse;
+  }
+  li:nth-child(2n){
+      color: rgb(150, 35, 112);
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form control">
+            <input type="text" placeholder="Enter the name">
+            <input type="password" placeholder="Enter your password">
+            <button>Submit</button>
+        </form>
+        <ul>
+            <li class="items" id="items1">item1</li>
+            <li class="items" id="items2">item2</li>
+            <li class="items" id="items3">item3</li>
+            <li class="items" id="items4">item4</li>
+            <li class="items" id="items5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>

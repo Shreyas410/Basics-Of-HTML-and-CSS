@@ -1,0 +1,38 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    /* padding: 0px 7px; */
+    flex-direction: column;
+
+}
+
+
+#home{
+height: 280px;
+flex-direction: column;
+padding: 5px;
+}
+
+#logo img{
+    width:100px ;
+ 
+}
+
+
+
+
+
+
+
+#services{
+  flex-direction: column;
+}
+
+#clients{
+    overflow: hidden;
+}
+.h_primary center{
+    font-size: 26px;
+}

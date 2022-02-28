@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script strings and string methods </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, commodi! Nihil adipisci eaque veritatis
+            temporibus minima inventore laborum perferendis corporis?
+        </p>
+    </div>
+    <script>
+    var string="this";
+    var name="Shreyas";
+    var tem=`${string} is ${name}`
+    console.log(string+name);
+    console.log(tem);
+
+    //len=name.length
+    console.log(name.length)
+
+    // functions of strings 
+    var str="This is a string "
+    var position=str.indexOf("is")
+    console.log(position)
+
+    //substring from a string 
+    // var substr1=str.slice(1,5)          //IT CAN TAKE NEGATIVE VALUES 
+    // var substr1=str.substring(1,5)      //IT WONT TAKE NEGATIVE VALUES
+    
+    var substr1=str.substr(1,3)
+    console.log(substr1)
+
+
+    var replaced=str.replace("string","shreyas")
+    console.log(str)
+    console.log(replaced)
+
+//#####################################################
+
+    console.log(str.toUpperCase())
+    console.log(str.toLowerCase())
+
+
+    var newstring=str.concat("   hello  all   ")
+    console.log(newstring)
+    
+    var newsttt="   hello  all    "
+    console.log(newsttt)
+    console.log(newsttt.trim())  //Removes whitespaces from the start and end not from between 2 words
+
+
+//#############################################################  
+    var  char4=str.charAt(3)
+    console.log(char4
+    )
+    </script>                               
+<body>
+
+</html> 
+

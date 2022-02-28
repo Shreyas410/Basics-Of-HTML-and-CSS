@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animations</title>
+</head>
+<style>
+    .container {
+        background-color: chartreuse;
+    }
+
+    .box {
+        background-color: burlywood;
+        color: cornsilk;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        animation-name: shreyas;
+        animation-duration: 9s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+        
+
+    }
+
+    @keyframes shreyas {
+        from {
+            width: 400px;
+            background:url("https://cdn.pixabay.com/photo/2015/10/12/15/05/car-984159_1280.jpg") ;
+            height: 300px;
+        }
+
+        to {
+            width: 800px;
+            background: url("https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_1280.jpg");
+            height: 500px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

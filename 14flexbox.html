@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+         .container{
+             height:930px;
+             width: 100%;
+             border: 2px solid black;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             /* justify-content: space-evenly; */
+             justify-content: space-between;
+             align-content: center;
+             
+         }
+
+         .item{
+             width: 300px;
+             height: 300px;
+             background-color: tomato;
+             border: solid yellow;
+             margin: 4px;
+             padding: 4px;
+         }
+
+         #item1{
+               order: 2; /*MORE ORDER IT WILL GO AT END */ 
+               /* flex-grow: 3; */
+               flex-basis: 430px; 
+                /* When the flex direction is set to row flex basis will control width */
+                /* When the flex direction is set to column flex basis will control width */
+                
+         }
+    </style>
+</head>
+<body>
+    <h1>FLEX BOX TUT</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">second </div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+        <div class="item" id="item6">6</div>
+    </div>
+</body>
+</html>
